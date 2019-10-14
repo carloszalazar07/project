@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>DISEÑO de Web</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <div class="container">
+			
+		<div class="row">
+			<div class="col-12 col-md-6">
+				<div class="card card-cascade narrower mb-5 my-5">
+		
+					<!-- Card image -->
+					<div class="view view-cascade gradient-card-header blue-gradient">
+						<h4 class="font-weight-500 mb-0">Producto</h4>
+					</div>
+					<!-- Card image -->
+		
+					<!-- Card content -->
+					<div class="card-body card-body-cascade">
+		
+						<form id="formulario" >
+							<div class="row">
+								<div class="col-6 col-md-6">
+									<div class="md-form md-outline">
+										<input type="text" id="nombre" class="form-control">
+										<label for="f2" class="">Nombre</label>
+									</div>
+								</div>
+								<div class="col-6 col-md-6">
+									<div class="md-form md-outline">
+										<input type="number" id="precio" class="form-control">
+										<label for="f3" class="">Precio</label>
+									</div>
+								</div>
+								<div class="col-12 col-md-6">
+									<div class="md-form md-outline">
+										<input type="number" id="cantidad" class="form-control">
+										<label for="cantidad" class="">Numero de Cantidad/Unidad</label>
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<button class="btn btn-primary waves-effect waves-light" type="submit">Crear</button>
+							</div>
+						</form>
+						
+					</div>
+					<!-- Card content -->
+			
+				</div>
+			</div>
+	
+			<div class="col-12 col-md-6">
+				<div class="card card-cascade narrower z-depth-1 my-5">
+		
+					<!-- Card image -->
+					<!-- aqua, purple,peach  y blue -->
+					<div class="view view-cascade gradient-card-header blue-gradient">
+						<h4 class="font-weight-500 mb-0">Lista de Productos</h4>
+					</div>
+					<!-- /Card image -->
+					<div class="px-4">
+						<div class="table-responsive">
+						<!-- Table -->
+						<table class="table table-hover mb-0">
+							<!-- Table head -->
+							<thead>
+								<tr>
+									<th class="th-lg">Nombre <i class="fas fa-sort ml-1"></i></th>
+									<th class="th-lg">Precio<i class="fas fa-sort ml-1"></i></th>
+									<th class="th-lg">Cantidad<i class="fas fa-sort ml-1"></i></th>
+								</tr>
+							</thead>
+							<!-- Table head -->
+			
+							<!-- Table body -->
+							<tbody id="contenido">
+								
+							</tbody>
+							<!-- Table body -->
+
+						</table>
+						<!-- Table -->
+					</div>
+					
+					<hr class="my-0">
+			
+						<!-- Pagination -->
+						<div class="my-4">
+							
+						</div>
+						<!-- /Pagination -->
+			
+					</div>
+						<!-- Bottom Table UI -->
+			
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+  	// Material Select Initialization
+$(document).ready(function() {
+$('.mdb-select').materialSelect();
+});
+$(function () {
+$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
+  </script>
